@@ -4,7 +4,7 @@ import { getFirestore, collection, addDoc, getDocs, query, where } from 'firebas
 import { getStorage } from 'firebase/storage';
 
 const firebaseConfig = {
-    apiKey: process.env.NEXT_PUBLIC_API_KEY,
+    apiKey: process.env.NEXT_API_KEY,
     authDomain: "socialmedia-auth-1be7f.firebaseapp.com",
     projectId: "socialmedia-auth-1be7f",
     storageBucket: "socialmedia-auth-1be7f.appspot.com",
