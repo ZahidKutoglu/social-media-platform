@@ -1,0 +1,287 @@
+.loginContainer-parent {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.login-container {
+    color: white;
+    padding: 20px;
+    max-width: 300px;
+    text-align: center;
+}
+  
+.PostIt-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+  
+.JoinToday-text {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px;
+}
+  
+.SignUp-button {
+    display: flex;
+    color: black;
+    background-color: rgb(245, 245, 245);
+    border-radius: 20px;
+    width: 194px;
+    height: 39px;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    padding-left: 10px;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+  
+.SignUp-button img {
+    margin-right: 10px;
+}
+  
+.SignUp-button:hover {
+    background-color: rgb(232, 232, 232); 
+    transition: 0.1s background-color ease-in-out;
+}
+
+.createAccount-button {
+    display: flex;
+    color: white;
+    background-color: #1d9bf0;
+    border-radius: 20px;
+    width: 194px;
+    height: 39px;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer; 
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    margin-bottom: 18px;
+}
+.createAccount-button:hover {
+    background-color: #178cdb; 
+    transition: 0.1s background-color ease-in-out;
+}
+
+.modal-close-button {
+  position: absolute;
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+
+.modal-close-button::before, .modal-close-button::after {
+  content: '';
+  position: absolute;
+  top: -20px;
+  left: 375px;
+  width: 18px;
+  height: 2px;
+  background-color: #a8a8a8;
+}
+
+.modal-close-button::before {
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.modal-close-button::after {
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+
+.createAccountModal {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 8px;
+    width: 300px;
+    margin: auto;
+  }
+  
+
+  .create-your-account-text {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: white;
+  }
+  
+  .usernameInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #26282a;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+  }
+  .usernameInput:focus {
+    border-color: #177dc3;
+    outline: none;
+  }
+  .usernameInput.usernameInput-error {
+    border: 1px solid red;
+  }
+  
+
+  .passwordInput {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #26282a;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+  }
+  
+  .passwordInput:focus {
+    border-color: #177dc3;
+    outline: none;
+  }
+  .input-error:focus {
+    border-color: red;
+  }
+
+  .done-button {
+    display: flex;
+    border-radius: 20px;
+    width: 300px;
+    height: 39px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer; 
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: #787a7a;
+    margin-top: 310px;
+    position: fixed;
+}
+
+.done-button-background {
+    display: flex;
+    border-radius: 20px;
+    width: 300px;
+    height: 39px;
+    align-items: center;
+    font-weight: 500;
+    font-size: 17px;
+    cursor: pointer; 
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    background-color: white;
+    margin-top: 310px;
+    position: fixed;
+}
+.done-button-background:hover {
+    background-color: rgb(239, 239, 239);
+    transition: 0.1s background-color ease-in-out;
+}
+
+.logIn-button {
+  display: flex;
+  border-radius: 20px;
+  width: 300px;
+  height: 39px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer; 
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: #787a7a;
+  margin-top: 310px;
+  position: fixed;
+}
+
+.logIn-button-background {
+  display: flex;
+  border-radius: 20px;
+  width: 300px;
+  height: 39px;
+  align-items: center;
+  font-weight: 500;
+  font-size: 17px;
+  cursor: pointer; 
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  background-color: white;
+  margin-top: 310px;
+  position: fixed;
+}
+.logIn-button-background:hover {
+  background-color: rgb(239, 239, 239);
+  transition: 0.1s background-color ease-in-out;
+}
+
+
+.loader {
+  width: 10px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  animation: l5 1s infinite linear alternate;
+}
+@keyframes l5 {
+    0%  {box-shadow: 20px 0 #000, -20px 0 #0002;background: #000 }
+    33% {box-shadow: 20px 0 #000, -20px 0 #0002;background: #0002}
+    66% {box-shadow: 20px 0 #0002,-20px 0 #000; background: #0002}
+    100%{box-shadow: 20px 0 #0002,-20px 0 #000; background: #000 }
+}
+
+
+
+.signIn-button {
+    display: flex;
+    color: #149bf0;
+    background-color: #000000;
+    border-radius: 20px;
+    width: 194px;
+    height: 39px;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    cursor: pointer; 
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    border-color: white;
+    border: 0.1px solid #536471;
+}
+.signIn-button:hover {
+    background-color: #031018; 
+    transition: 0.1s background-color ease-in-out;
+}
+
+.or-container {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+}
+  
+  .line {
+    flex-grow: 1;
+    height: 1px;
+    background-color: #2f3336;
+    margin-top: 2px;
+  }
+  
+  .or-text {
+    margin: 0 10px;
+    color: #ffffff;
+  }
+  
+

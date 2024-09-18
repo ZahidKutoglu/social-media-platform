@@ -1,0 +1,60 @@
+.comment-input {
+    background: none;
+    border: none;
+    outline: none;
+    color: white;
+}
+.comment-input:focus {
+    border: none;
+}
+
+.comments-container {
+    max-height: 300px; /* Adjust based on your design */
+    overflow-y: auto;
+    margin-top: 16px; /* Adjust spacing as needed */
+  }
+
+.comment-content {
+  display: flex;
+  font-size: 20px;
+}
+
+
+  .threeDots2 {
+    font-size: 20px;
+    cursor: pointer;
+    transition: color 0.05s ease-in-out;
+  }
+  .threeDots2:active {
+    color: rgb(146, 146, 146);
+  }
+  
+  .delete-cancel-post2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px; /* Ensure units are specified */
+  }
+  
+  .delete-cancel-post .button {
+    width: 100%; /* Ensure buttons take full width */
+    padding: 15px 0; /* Padding for vertical spacing */
+    text-align: center;
+    cursor: pointer;
+  }
+  
+  .delete-cancel-post .delete2 {
+    color: #ff4d4d; /* Red color for delete button */
+    font-weight: 500;
+  }
+  
+  .delete-cancel-post .cancel {
+    font-weight: 200;
+    color: #ffffff; /* White color for edit button */
+  }
+  
+  .delete-cancel-post .divider2 {
+    width: 100%; /* Full width line */
+    height: 1px; /* Line thickness */
+    background-color: #444444; /* Line color */
+  }

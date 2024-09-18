@@ -1,0 +1,136 @@
+.list-container {
+  position: fixed;
+  top: 50%;
+  left: 6px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: transparent;
+}
+.Icons-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+}
+
+.modalContainerStyle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 60%;
+    min-width: 500px;
+    height: auto;
+    max-height: 90vh;
+    min-height: 30vh;
+    outline: none;
+    z-index: 1000;
+}
+.modalStyle {
+    position: relative;
+    background-color: #181818;
+    border-radius: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* Adjust shadow as needed */
+    padding: 16px 32px 24px;
+}
+
+.newPostText {
+  position: absolute;
+  color: white;
+  top: -45px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 17px;
+  z-index: 1100;
+}
+.newPostText2 {
+  display: flex;
+  justify-content: center;
+  color: white;
+  font-size: 17px;
+}
+.topContainer {
+  display: flex;
+  justify-content: center;
+  visibility: hidden;
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+    .list-container {
+      top: auto;
+      left: 0;
+      bottom: 0;
+      transform: none;
+      width: 100vw;
+      padding: 0;
+      width: 100%;
+    }
+    .Icons-list {
+      flex-direction: row;
+      width: 100%;
+      display: flex;
+      justify-content: space-around;
+      background-color: rgba(0, 0, 0, 0.72);
+      height: 48px;
+    }
+    
+
+  .modalContainerStyle {
+      min-width: 100vw;
+      max-height: 100vh;
+      margin-top: -3px;
+  }
+  .modalStyle {
+    height: 80vh;
+    border-radius: 0;
+  }
+  .newPostText {
+    visibility: hidden;
+    display: none;
+  }
+  
+  .topContainer {
+    display: flex;
+    justify-content: center;
+    visibility: visible;
+  }
+  .newPostText2 {
+    text-align: center;
+    margin: 0 auto;
+    display: flex;
+  }
+  .closeButton {
+    color: white;
+    margin-right: -20px;
+    cursor: pointer;
+  }
+  .postButtonContainer {
+    position: fixed;
+    bottom: 20px;
+    left: 0;
+    right: 30px;
+    display: flex;
+    justify-content: flex-end;
+    box-sizing: border-box;
+  }
+}
+
+.favoriteIconWrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.redDot {
+  position: absolute;
+  top: 3px;
+  right: 2px;
+  width: 8px;
+  height: 8px;
+  background-color: red;
+  border-radius: 50%;
+  z-index: 1;
+}

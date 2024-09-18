@@ -1,0 +1,22 @@
+.likes-text {
+    color: white;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+.likes-container {
+    flex-direction: column;
+    color: white;
+    padding: 20px;
+    background-color: #181818;
+    height: auto;
+    min-height: 100vh;
+    min-width: 350px;
+    width: auto;
+    max-width: 40%;
+    margin-top: 15px;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 750px) {
+}

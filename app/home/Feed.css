@@ -1,0 +1,222 @@
+@import '~slick-carousel/slick/slick.css';
+@import '~slick-carousel/slick/slick-theme.css';
+
+
+.feed-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 50px;
+  height: 100vh;
+  margin: 0 auto;
+  padding: 0 20px 20px 20px;
+  background-color: #000000; 
+  margin-top: -8px;
+  max-width: 90vw;
+  min-width: 20vw;
+
+}
+
+.post {
+  margin-bottom: 20px;
+  width: 100%;
+  padding: 15px;
+  color: white;
+  width: 600px;
+  max-width: 92vw;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.post-header img {
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post-header h3 {
+  margin: 0;
+  font-size: 16px;
+  flex-grow: 1;
+}
+
+.follow-button {
+  background: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+  cursor: pointer;
+}
+
+.follow-button:hover {
+  background: #0056b3;
+}
+
+
+.post-media {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+  margin: 10px 0;
+  object-fit: cover;
+  max-height: 1000px;
+}
+
+.post p {
+  margin: 10px 0;
+}
+
+.placeholder-profile {
+  width: 50px;
+  height: 50px;
+  background-color: #ccc;
+  border-radius: 50%;
+}
+
+.heartIcon {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(25deg) brightness(107%) contrast(101%);
+  margin-top: 2px;
+  width: 28px;  
+  height: 28px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+.heartIconRed {
+  margin-top: 2px;
+  width: 28px;  
+  height: 28px;
+  padding-right: 5px;
+  cursor: pointer;
+}
+.commentIcon {
+  filter: brightness(0) saturate(100%) invert(100%) sepia(100%) saturate(1%) hue-rotate(25deg) brightness(107%) contrast(101%);
+  width: 31px;
+  height: 31px;
+  cursor: pointer;
+}
+
+.threeDots {
+  font-size: 20px;
+  cursor: pointer;
+  transition: color 0.05s ease-in-out;
+}
+.threeDots:active {
+  color: rgb(146, 146, 146);
+}
+
+.delete-edit-post {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-weight: 500;
+  font-size: 15px; /* Ensure units are specified */
+}
+
+.delete-edit-post .button {
+  width: 100%; /* Ensure buttons take full width */
+  padding: 15px 0; /* Padding for vertical spacing */
+  text-align: center;
+  cursor: pointer;
+}
+
+.delete-edit-post .delete {
+  color: #ff4d4d; /* Red color for delete button */
+}
+
+.delete-edit-post .edit {
+  color: #ffffff; /* White color for edit button */
+}
+
+.delete-edit-post .divider {
+  width: 100%; /* Full width line */
+  height: 1px; /* Line thickness */
+  background-color: #444444; /* Line color */
+}
+
+
+.video-hover::-webkit-media-controls-enclosure {
+  opacity: 0;
+}
+
+
+.video-hover:hover::-webkit-media-controls-enclosure {
+  opacity: 1;
+}
+
+.spinner {
+  width: 44px;
+  height: 44px;
+  animation: spinner-y0fdc1 2s infinite ease;
+  transform-style: preserve-3d;
+}
+
+.spinner>div {
+  background-color: rgba(0, 77, 255, 0.2);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  border: 2px solid #004dff;
+}
+
+.spinner div:nth-of-type(1) {
+  transform: translateZ(-22px) rotateY(180deg);
+}
+
+.spinner div:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.spinner div:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.spinner div:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.spinner div:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.spinner div:nth-of-type(6) {
+  transform: translateZ(22px);
+}
+
+@keyframes spinner-y0fdc1 {
+  0% {
+      transform: rotate(45deg) rotateX(-25deg) rotateY(25deg);
+  }
+
+  50% {
+      transform: rotate(45deg) rotateX(-385deg) rotateY(25deg);
+  }
+
+  100% {
+      transform: rotate(45deg) rotateX(-385deg) rotateY(385deg);
+  }
+}
+
+.slick-dots li button:before {
+  color: white; /* Change to your desired color */
+}
+
+.slick-dots li.slick-active button:before {
+  color: white; /* Change the color for the active dot */
+}
+
+.post-media {
+  transition: opacity 1s ease-out; /* Smooth fade effect */
+}
+
+.post-media.faded {
+  opacity: 0.3; /* Adjust opacity for the fade-out effect */
+}

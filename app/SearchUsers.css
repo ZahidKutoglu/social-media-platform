@@ -1,0 +1,16 @@
+.search-users-container {
+    padding: 20px;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
+  .search-result-item {
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  .search-result-item img {
+    border-radius: 50%;
+    margin-right: 10px;
+  }
