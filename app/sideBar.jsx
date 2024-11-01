@@ -34,7 +34,7 @@ const Sidebar = () => {
     useEffect(() => {
       if (typeof window !== 'undefined') {
         const handleResize = () => setWindowWidth(window.innerWidth);
-        setWindowWidth(window.innerWidth); // Set initial width
+        setWindowWidth(window.innerWidth); 
         window.addEventListener('resize', handleResize);
         return () => window.removeEventListener('resize', handleResize);
       }
