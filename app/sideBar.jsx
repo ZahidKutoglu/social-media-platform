@@ -29,14 +29,17 @@ const Sidebar = () => {
   const [isLikesPage, setIsLikesPage] = useState(false);
 
   const useWindowWidth = () => {
-    const [windowWidth, setWindowWidth] = useState(window.innerWidth);
-
+    const [windowWidth, setWindowWidth] = useState(null);
+  
     useEffect(() => {
-      const handleResize = () => setWindowWidth(window.innerWidth);
-      window.addEventListener('resize', handleResize);
-      return () => window.removeEventListener('resize', handleResize);
+      if (typeof window !== 'undefined') {
+        const handleResize = () => setWindowWidth(window.innerWidth);
+        setWindowWidth(window.innerWidth); // Set initial width
+        window.addEventListener('resize', handleResize);
+        return () => window.removeEventListener('resize', handleResize);
+      }
     }, []);
-
+  
     return windowWidth;
   };
 
