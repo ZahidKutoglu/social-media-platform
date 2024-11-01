@@ -209,4 +209,4 @@ const Sidebar = () => {
   );
 };
 
-export default withAuth(Sidebar);
+export default Sidebar;
