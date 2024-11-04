@@ -216,7 +216,7 @@ const CommentSection = ({ postId, post }) => {
               {post.mediaURLs.map((media, index) => (
                 <React.Fragment key={index}>
                   {media.type === 'image' && (
-                    <img src={media.url} alt="Post media" className="post-media" />
+                    <img style={{ maxHeight: '55vh', objectFit: 'contain' }} src={media.url} alt="Post media" className="post-media" />
                   )}
                   {media.type === 'video' && (
                     <video className="post-media" controls>
