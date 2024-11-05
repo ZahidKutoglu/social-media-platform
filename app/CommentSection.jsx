@@ -158,7 +158,7 @@ const CommentSection = ({ postId, post }) => {
     maxWidth: '60%',
     minWidth: '400px',
     maxHeight: '70vh',
-    minHeight: 'auto',
+    minHeight: '30vh',
     outline: 'none',
     zIndex: 1000,
     backgroundColor: '#1a1a1a',
